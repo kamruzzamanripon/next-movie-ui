@@ -1,3 +1,4 @@
+import Image from 'next/image';
 const FormInput = () => {
   return (
     <div>
@@ -5,10 +6,12 @@ const FormInput = () => {
         <h1 className="text-2xl font-bold text-gray-700 mb-3 dark:text-white">
           Manual Movie Maker
         </h1>
-        <img
-          src="storytelling-08.gif"
-          alt
-          className="rounded-full w-48 h-48 absolute -top-5 right-0 sm::hidden"
+        <Image
+          src="/storytelling-08.gif"
+          className="rounded-full w-44 h-44 absolute -top-5 right-0 sm::hidden"
+          alt="Shawshank Redemption Movie Poster"
+          width={130} 
+          height={130} 
         />
       </div>
       <div className="mx-10 px-10 py-16 bg-gray-400 dark:bg-black dark:border rounded-md">

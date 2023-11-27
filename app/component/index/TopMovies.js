@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import ImdbLogo from "../icons/ImdbLogo";
 import NextPrev from "../icons/NextPrev";
 
@@ -19,10 +20,13 @@ const TopMovies = () => {
             key={index}
             className="flex flex-col rounded-xl overflow-hidden aspect-square border dark:border-zinc-600"
           >
-            <img
-              src="3815eedd3e7a35abf7_screen.jpg"
+            <Image
+              src="/3815eedd3e7a35abf7_screen.jpg"
               className="h-4/5 object-cover w-full"
-              alt=""
+              alt="sds"
+              width={105} 
+              height={105} 
+              layout="responsive"
             />
             <div className="w-full h-1/5 bg-white dark:bg-zinc-800 dark:text-white px-3 flex items-center justify-between border-t-2 border-t-red-600">
               <span className="capitalize font-medium truncate">Tenet</span>

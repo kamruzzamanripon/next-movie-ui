@@ -1,3 +1,4 @@
+import Image from 'next/image';
 
 const AiFormInput = () => {
   return (
@@ -10,10 +11,13 @@ const AiFormInput = () => {
           <p className="dark:text-white">
             Please, write your idea below input box
           </p>
-          <img
-            src="robot-1.webp"
-            alt
-            className="rounded-full w-48 h-48 absolute top-0 right-0 right-[240px]"
+          <Image
+            src="/robot-1.webp"
+            className="rounded-full absolute top-5 right-0"
+            alt="Shawshank Redemption Movie Poster"
+            width={130} 
+            height={130} 
+           
           />
         </div>
         
@@ -27,7 +31,7 @@ const AiFormInput = () => {
           </label>
           <textarea
             id="message"
-            rows={4}
+            rows={18}
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Type Movie short description..."
             v-model="movieData.description"
