@@ -97,13 +97,13 @@ const LiftSideBar = () => {
           <Settings />
           <span>Settings</span>
         </a>
-        <a
+        <Link
           className=" flex items-center space-x-2 py-1  group hover:border-r-4 hover:border-r-red-600 hover:font-semibold dark:hover:text-white"
-          href="#"
+          href="/login"
         >
           <Logout />
-          <span>Logout</span>
-        </a>
+          <span>Log In</span>
+        </Link>
       </div>
     </aside>
   );
